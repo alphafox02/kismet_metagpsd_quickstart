@@ -12,7 +12,7 @@ def start_kismet_cap(kismet_cap_bin, host_uri, apikey, source_name, metagps_name
     global kismet_process
     command = [
         kismet_cap_bin,
-        "--connect", f"{host_uri}:2501",
+        "--connect", host_uri,
         "--apikey", apikey,
         "--source", f"{source_name}:name={metagps_name},metagps={metagps_name}"
     ]
