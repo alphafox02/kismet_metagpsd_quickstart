@@ -38,7 +38,15 @@ This Python script simplifies the process of setting up Kismet remote capture an
 
 5. Ensure that the `metagpsd.py` script is in the same directory as the wrapper script.
 
-6. Run the script with appropriate arguments:
+6. Install the required dependencies for `python-kismet-metagpsd`:
+
+    On DragonOS FocalX, the only requirements currently needed for the `python-kismet-metagpsd` repository are the following, installed via pip3:
+
+    ```bash
+    sudo pip3 install gpsdclient loguru
+    ```
+
+7. Run the script with appropriate arguments:
 
     ```bash
     python3 kismet_metagpsd_quickstart.py --kismet-cap-bin <path-to-kismet-cap-bin> --kismet-host <kismet-server-address> --kismet-apikey <kismet-api-key> --source-name <source-name> --metagps-name <metagps-name> --use-ssl
@@ -52,8 +60,7 @@ This Python script simplifies the process of setting up Kismet remote capture an
     python3 kismet_metagpsd_quickstart.py --kismet-cap-bin kismet_cap_linux_wifi --kismet-host 10.185.1.147:2501 --kismet-apikey 156AD3F90791C3960058E53BD7FF80CE --source-name wlp1s0 --metagps-name remote0
     ```
 
-7. The script will start the Kismet remote capture tool and the MetaGPS script. It will continuously monitor and restart the MetaGPS script if necessary.
-
+8. The script will start the Kismet remote capture tool and the MetaGPS script. It will continuously monitor and restart the MetaGPS script if necessary.
 
 ## Notes
 
