@@ -4,6 +4,8 @@ This Python script simplifies the process of setting up Kismet remote capture an
 
 ## Prerequisites
 
+- **GPSD GPS**: Ensure that a compatible GPSD GPS is provided and working. You can confirm this by running `cgps`.
+  
 - **Kismet Installation**: Ensure you have Kismet installed and configured. You can download the latest stable release from the [Kismet website](https://www.kismetwireless.net/downloads/). Nightly builds should also work.
   
 - **API Key**: Create an API key on the Kismet server following the instructions on the [MetaGPS GitHub page](https://github.com/hobobandy/python-kismet-metagpsd).
