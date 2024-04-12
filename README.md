@@ -12,27 +12,33 @@ This Python script simplifies the process of setting up Kismet remote capture an
 
 ## Usage
 
-1. Clone this repository or download the script file:
+1. Clone this repository:
 
     ```bash
     git clone https://github.com/alphafox02/kismet_metagpsd_quickstart.git
     ```
 
-2. Copy the script into the `python-kismet-metagpsd` directory:
+2. Clone the `python-kismet-metagpsd` repository:
+
+    ```bash
+    git clone https://github.com/hobobandy/python-kismet-metagpsd.git
+    ```
+
+3. Copy the script into the `python-kismet-metagpsd` directory:
 
     ```bash
     cp kismet_metagpsd_quickstart.py python-kismet-metagpsd/
     ```
 
-3. Navigate to the `python-kismet-metagpsd` directory:
+4. Navigate to the `python-kismet-metagpsd` directory:
 
     ```bash
     cd python-kismet-metagpsd
     ```
 
-4. Ensure that the `metagpsd.py` script is in the same directory as the wrapper script.
+5. Ensure that the `metagpsd.py` script is in the same directory as the wrapper script.
 
-5. Run the script with appropriate arguments:
+6. Run the script with appropriate arguments:
 
     ```bash
     python3 kismet_metagpsd_quickstart.py --kismet-cap-bin <path-to-kismet-cap-bin> --kismet-host <kismet-server-address> --kismet-apikey <kismet-api-key> --source-name <source-name> --metagps-name <metagps-name> --use-ssl
@@ -46,7 +52,7 @@ This Python script simplifies the process of setting up Kismet remote capture an
     python3 kismet_metagpsd_quickstart.py --kismet-cap-bin kismet_cap_linux_wifi --kismet-host 10.185.1.147:2501 --kismet-apikey 156AD3F90791C3960058E53BD7FF80CE --source-name wlp1s0 --metagps-name remote0
     ```
 
-6. The script will start the Kismet remote capture tool and the MetaGPS script. It will continuously monitor and restart the MetaGPS script if necessary.
+7. The script will start the Kismet remote capture tool and the MetaGPS script. It will continuously monitor and restart the MetaGPS script if necessary.
 
 
 ## Notes
