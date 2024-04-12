@@ -59,7 +59,7 @@ This Python script simplifies the process of setting up Kismet remote capture an
     For example:
 
     ```bash
-    python3 kismet_metagpsd_quickstart.py --kismet-cap-bin kismet_cap_linux_wifi --kismet-host 10.185.1.147:2501 --kismet-apikey 156AD3F90791C3960058E53BD7FF80CE --source-name wlp1s0 --metagps-name remote0
+    python3 kismet_metagpsd.py --kismet-cap-bin kismet_cap_linux_wifi --kismet-host 172.27.78.181:2501 --kismet-apikey 156AD3F90791C3960058E53BD7FF80CE --source-name wlp1s0 --metagps-name remote0
     ```
 
 8. The script will start the Kismet remote capture tool and the MetaGPS script. It will continuously monitor and restart the MetaGPS script if necessary.
